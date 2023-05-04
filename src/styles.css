@@ -38,6 +38,7 @@ a {
   display: flex;
   padding: 10px 0px 10px 10px;
   margin: 0;
+  gap: 8px;
 }
 .nav-list ul li {
   display: none;
