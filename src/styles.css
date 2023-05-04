@@ -60,7 +60,7 @@ a {
 .nav-list a {
   display: flex;
   align-items: center;
-  gap: 3px;
+  gap: 5px;
   border-radius: 12px;
   padding: 7px;
 }
@@ -70,6 +70,7 @@ a {
 }
 .nav-list span {
   color: #4fb1e1;
+  font-size: 18px;
 }
 
 @media screen and (min-width: 768px) {
@@ -87,5 +88,8 @@ a {
   }
   .nav-list a {
     padding: 7px 15px;
+  }
+  .nav-list span{
+    font-size: 24px;
   }
 }
