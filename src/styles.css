@@ -81,6 +81,7 @@ a {
     font-size: 30px;
     font-weight: bold;
    color: white;
+   font-family: 'Castoro Titling', cursive;
 }
 
 @media screen and (min-width: 768px) {
