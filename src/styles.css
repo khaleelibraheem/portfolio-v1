@@ -98,6 +98,14 @@ a {
 }
 .para-intro {
   margin-top: 20px;
+  margin-bottom: 50px;
+}
+#my-projects-btn{
+    font-family: var(--typewriter-style);
+    color: var(--light-blue);
+    border: 1px solid var(--light-blue);
+    padding: 10px 15px;
+    border-radius: 3px;
 }
 
 @media screen and (max-width: 479px) {
