@@ -46,8 +46,8 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--navy-blue-2);
-  box-shadow: var(--shadow);
+  /* background-color: var(--navy-blue-2); */
+  /* box-shadow: var(--shadow); */
   padding: 0px 8px;
   border-radius: 8px;
 }
