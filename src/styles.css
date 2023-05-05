@@ -130,6 +130,7 @@ a {
 .section-container {
   display: flex;
   align-items: center;
+  justify-content: stretch;
   gap: 5px;
 }
 .section-header {
@@ -140,7 +141,7 @@ a {
   color: var(--light-blue);
 }
 .section-line {
-  width: 40%;
+  width: 50%;
   height: 1px;
   border-radius: 5px;
   background-color: var(--light-gray);
