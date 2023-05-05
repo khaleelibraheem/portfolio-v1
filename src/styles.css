@@ -16,6 +16,9 @@
   font-family: var(--roboto-style);
   color: var(--light-gray);
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   background: var(--navy-blue);
 }
@@ -35,13 +38,12 @@ a {
   color: white;
 }
 #nav-container {
-  padding: 7px;
+  /* padding: 0 7px; */
   position: sticky;
   top: 0;
 }
 #container {
   padding: 0px 50px;
-  margin-top: 135px;
 }
 /* Navbar */
 #navbar {
@@ -50,8 +52,8 @@ a {
   align-items: center;
   background-color: var(--navy-blue-2);
   box-shadow: var(--shadow);
-  padding: 0px 8px;
-  border-radius: 8px;
+  padding: 0px 15px;
+  /* border-radius: 8px; */
 }
 .nav-logo img {
   width: 25px;
@@ -90,6 +92,10 @@ a {
 }
 
 /* Home Section */
+#home{
+    margin-top: 0px;
+    padding-top: 135px;
+}
 .para-hi {
   font-family: var(--typewriter-style);
   color: var(--light-blue);
@@ -117,8 +123,9 @@ a {
 
 /* About Section */
 #about {
-  margin-top: 150px;
+  margin-top: 90px;
   margin-bottom: 100px;
+  padding-top: 60px;
 }
 .section-container {
   display: flex;
@@ -170,7 +177,6 @@ a {
 @media screen and (max-width: 479px) {
   #container {
     padding: 0px 25px;
-    margin-top: 100px;
   }
   .home-text h2 {
     font-size: 33px;
@@ -182,8 +188,11 @@ a {
 @media screen and (min-width: 768px) {
   #container {
     padding: 0px 100px;
-    margin-top: 100px;
   }
+  #home{
+    margin-top: 0px;
+    padding-top: 135px;
+}
   #navbar {
     padding: 0px 40px;
   }
