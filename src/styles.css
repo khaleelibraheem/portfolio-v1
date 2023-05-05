@@ -36,6 +36,8 @@ a {
 }
 #nav-container {
   padding: 7px;
+  position: sticky;
+  top: 0;
 }
 #container {
   padding: 0px 50px;
@@ -46,8 +48,8 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* background-color: var(--navy-blue-2); */
-  /* box-shadow: var(--shadow); */
+  background-color: var(--navy-blue-2);
+  box-shadow: var(--shadow);
   padding: 0px 8px;
   border-radius: 8px;
 }
@@ -70,9 +72,9 @@ a {
   border-radius: 12px;
   padding: 7px;
 }
-.nav-list a li{
-    font-family: var(--typewriter-style);
-    font-size: 13px;
+.nav-list a li {
+  font-family: var(--typewriter-style);
+  font-size: 13px;
 }
 .nav-list a:hover {
   box-shadow: var(--shadow);
@@ -104,13 +106,36 @@ a {
   margin-top: 20px;
   margin-bottom: 50px;
 }
-#my-projects-btn{
-    font-family: var(--typewriter-style);
-    color: var(--light-blue);
-    border: 1px solid var(--light-blue);
-    padding: 15px 25px;
-    border-radius: 3px;
-    font-size: 16px;
+#my-projects-btn {
+  font-family: var(--typewriter-style);
+  color: var(--light-blue);
+  border: 1px solid var(--light-blue);
+  padding: 15px 25px;
+  border-radius: 3px;
+  font-size: 16px;
+}
+
+/* About Section */
+#about {
+  margin-top: 150px;
+}
+.section-container {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.section-header {
+  display: flex;
+  align-items: center;
+}
+.section-header span {
+  color: var(--light-blue);
+}
+.section-line {
+  width: 40%;
+  height: 1px;
+  border-radius: 5px;
+  background-color: var(--light-gray);
 }
 
 @media screen and (max-width: 479px) {
@@ -155,12 +180,12 @@ a {
     font-size: 59px;
     max-width: 800px;
   }
-  .para-intro{
+  .para-intro {
     max-width: 550px;
   }
 }
 @media screen and (min-width: 1070px) {
-    #container{
-        padding: 0px 250px;
-    }
+  #container {
+    padding: 0px 250px;
+  }
 }
