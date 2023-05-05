@@ -116,7 +116,7 @@ a {
 @media screen and (max-width: 479px) {
   #container {
     padding: 0px 25px;
-    margin-top: 145px;
+    margin-top: 100px;
   }
   .home-text h2 {
     font-size: 33px;
