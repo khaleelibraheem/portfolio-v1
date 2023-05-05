@@ -72,6 +72,7 @@ a {
 }
 .nav-list a li{
     font-family: var(--typewriter-style);
+    font-size: 13px;
 }
 .nav-list a:hover {
   box-shadow: var(--shadow);
@@ -107,8 +108,9 @@ a {
     font-family: var(--typewriter-style);
     color: var(--light-blue);
     border: 1px solid var(--light-blue);
-    padding: 10px 15px;
+    padding: 15px 25px;
     border-radius: 3px;
+    font-size: 16px;
 }
 
 @media screen and (max-width: 479px) {
