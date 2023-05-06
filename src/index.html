@@ -24,6 +24,7 @@
       href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -76,7 +77,7 @@
       </section>
 
       <!-- About Section -->
-      <section id="about" data-aos="fade-up" class="fade-in">
+      <section id="about" data-aos="fade" class="fade-i">
         <div>
           <div class="section-container">
             <div class="section-line"></div>
@@ -120,7 +121,7 @@
                 and stay energized for my studies and coding work.
               </p>
             </div>
-            <div class="about-text-img" data-aos="fade-up">
+            <div class="about-text-img">
               <img src="images/khaleell.png" alt="khaleel alhaji" />
             </div>
           </div>
@@ -128,7 +129,7 @@
       </section>
 
       <!-- Projects Section -->
-      <section id="projects" data-aos="fade-up" class="fade-in">
+      <section id="projects" data-aos="fade">
         <div>
           <div class="section-container">
             <div class="section-line"></div>
@@ -189,16 +190,26 @@
     <section id="footer">
       <div class="footer-icons">
         <a href="https://instagram.com/khaleelalhaji" target="_blank">
-          Instagram
+          <img src="images/i-instagram.svg" alt="" />
         </a>
-        <a href="https://wa.link/rco31u" target="_blank"> Whatsapp </a>
+        <a href="https://github.com/khaleelibraheem" target="_blank">
+          <img src="images/i-github.svg" alt="" />
+        </a>
+        <!-- <p>https://wa.link/rco31u</p> -->
         <a href="https://www.facebook.com/khaleel.alhaji/" target="_blank">
-          Facebook</a
-        >
+          <img src="images/i-facebook.svg" alt="" />
+        </a>
       </div>
-      <p>Built by <span>Khaleel Alhaji</span></p>
+      <p class="name">Built by <span>Khaleel Alhaji</span></p>
       <p>&copy2023</p>
     </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 200,
+        duration: 1000,
+      });
+    </script>
     <script src="app.js"></script>
   </body>
 </html>

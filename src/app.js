@@ -1,50 +1,37 @@
 document.addEventListener("DOMContentLoaded", function () {
-  // Add active class to the current section on scroll
   const navLinks = document.querySelectorAll("#ul .nav-link");
   const sections = document.querySelectorAll("section");
-  const scrollOptions = {
-    rootMargin: "-50px",
-    threshold: 0.5,
+
+  const observerOptions = {
+    rootMargin: "-50px 0px 0px 0px",
+    threshold: [0, 0.2, 0.5, 0.8, 1],
   };
-  const scrollObserver = new IntersectionObserver((entries) => {
+
+  const observerCallback = (entries) => {
     entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        const index = [...sections].indexOf(entry.target);
+      if (entry.target.id && entry.intersectionRatio >= 0.5) {
         navLinks.forEach((link) => link.classList.remove("active"));
-        navLinks[index].classList.add("active");
+        document
+          .querySelector(`#ul a[href="#${entry.target.id}"]`)
+          .classList.add("active");
       }
     });
-  }, scrollOptions);
-  sections.forEach((section) => scrollObserver.observe(section));
-
-  // Add active class to the current section on click
-  navLinks.forEach((link) => {
-    link.addEventListener("click", () => {
-      navLinks.forEach((link) => link.classList.remove("active"));
-      link.classList.add("active");
-    });
-  });
-
-  // Detect when a user has scrolled to a section
-  const sectionOptions = {
-    rootMargin: "0px",
-    threshold: 0.2,
   };
 
-  const sectionObserver = new IntersectionObserver(function (
-    entries,
-    observer
-  ) {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("activate");
-      }
-    });
-  },
-  sectionOptions);
+  const sectionObserver = new IntersectionObserver(
+    observerCallback,
+    observerOptions
+  );
 
-  // Add the observer to each section
   sections.forEach((section) => {
     sectionObserver.observe(section);
+  });
+
+  navLinks.forEach((link) => {
+    link.addEventListener("click", (event) => {
+      event.preventDefault();
+      let target = document.querySelector(link.hash);
+      target.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
   });
 });

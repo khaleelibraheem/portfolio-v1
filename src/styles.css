@@ -42,16 +42,6 @@ section {
   /* border: 1px solid var(--light-blue); */
   margin-bottom: 100px;
 }
-/* Define a transition for the fade-in effect */
-.fade-in {
-  opacity: 0;
-  transition: opacity 0.5s ease-in-out;
-}
-
-/* Set the opacity to 1 for the fade-in effect */
-.fade-in.activate {
-  opacity: 1;
-}
 #nav-container {
   position: sticky;
   top: 0;
@@ -148,6 +138,7 @@ section {
 }
 .section-container h3 {
   letter-spacing: 2px;
+  font-size: 14px;
 }
 .section-header {
   display: flex;
@@ -227,8 +218,15 @@ section {
 .project-image img {
   transition: 0.5s ease;
 }
+#my-projects-btn {
+  box-shadow: 0 0 transparent;
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  transition: 0.5s ease;
+}
 
-.project-image img:hover {
+.project-image img:hover,
+#my-projects-btn:hover {
   box-shadow: -1px 1px #4fb1e1, -2px 2px #4fb1e1, -3px 3px #4fb1e1,
     -4px 4px #4fb1e1, -5px 5px #4fb1e1, -6px 6px #4fb1e1;
   -webkit-transform: translateX(3px);
@@ -255,6 +253,7 @@ section {
   margin-bottom: 70px;
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 30px;
 }
 .footer-icons a {
@@ -264,6 +263,9 @@ section {
 }
 #footer p {
   margin-bottom: 20px;
+}
+#footer .name {
+  font-size: 12px;
 }
 #footer p,
 #footer p span {
@@ -363,7 +365,7 @@ section {
     margin-top: 10px;
   }
   .footer-icons {
-    gap: 80px;
+    gap: 40px;
   }
 
   .footer-icons a {
