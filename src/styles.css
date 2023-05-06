@@ -40,7 +40,7 @@ a {
 #nav-container {
   position: sticky;
   top: 0;
-   z-index: 100;
+  z-index: 100;
 }
 #container {
   padding: 0px 50px;
@@ -119,9 +119,8 @@ a {
 
 /* About Section */
 #about {
-  margin-top: 90px;
   margin-bottom: 100px;
-  padding-top: 60px;
+  padding-top: 170px;
 }
 .section-container {
   display: flex;
@@ -223,6 +222,10 @@ a {
     max-width: 550px;
   }
   /* About Section */
+  #about {
+    margin-top: 90px;
+    padding-top: 60px;
+  }
   .about-text {
     flex-direction: row;
     gap: 50px;
