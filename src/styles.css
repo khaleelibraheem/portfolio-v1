@@ -191,6 +191,7 @@ section {
   font-family: var(--typewriter-style);
   margin-top: 45px;
   color: var(--light-blue);
+  font-size: 16px;
 }
 .project-container {
   display: flex;
@@ -294,6 +295,12 @@ section {
     flex-direction: row;
     margin-top: 20px;
   }
+  .project-header {
+  font-family: var(--typewriter-style);
+  margin-top: 45px;
+  color: var(--light-blue);
+  font-size: 16px;
+}
   .project-descr{
     width: 100%;
   }
