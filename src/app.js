@@ -27,21 +27,21 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
     // TypeWriter Effects
-    const text = "Hi, my name is"; // the text to display
-    const delay = 100; // the delay between each letter, in milliseconds
+    // const text = "Hi, my name is"; // the text to display
+    // const delay = 70; // the delay between each letter, in milliseconds
 
-    function typeWriterEffect(text, delay) {
-      const element = document.getElementById("typewriter");
-      let i = 0;
-      function typeLetter() {
-        if (i < text.length) {
-          element.innerHTML += text.charAt(i);
-          i++;
-          setTimeout(typeLetter, delay);
-        }
-      }
-      typeLetter();
-    }
+    // function typeWriterEffect(text, delay) {
+    //   const element = document.getElementById("typewriter");
+    //   let i = 0;
+    //   function typeLetter() {
+    //     if (i < text.length) {
+    //       element.innerHTML += text.charAt(i);
+    //       i++;
+    //       setTimeout(typeLetter, delay);
+    //     }
+    //   }
+    //   typeLetter();
+    // }
 
-    typeWriterEffect(text, delay);
+    // typeWriterEffect(text, delay);
 });
