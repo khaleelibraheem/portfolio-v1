@@ -51,9 +51,9 @@ a {
   justify-content: space-between;
   align-items: center;
   background-color: var(--navy-blue-2);
+  z-index: 1;
   box-shadow: var(--shadow);
   padding: 0px 15px;
-  /* border-radius: 8px; */
 }
 .nav-logo img {
   width: 25px;
