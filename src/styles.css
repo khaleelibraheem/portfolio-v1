@@ -38,9 +38,9 @@ a {
   color: white;
 }
 #nav-container {
-  /* padding: 0 7px; */
   position: sticky;
   top: 0;
+   z-index: 100;
 }
 #container {
   padding: 0px 50px;
@@ -51,7 +51,6 @@ a {
   justify-content: space-between;
   align-items: center;
   background-color: var(--navy-blue-2);
-  z-index: 1;
   box-shadow: var(--shadow);
   padding: 0px 15px;
 }
@@ -78,10 +77,7 @@ a {
   font-family: var(--roboto-style);
   font-size: 13px;
 }
-.nav-list a:hover {
-  box-shadow: var(--shadow);
-  background: var(--light-blue-hover);
-}
+
 .nav-list span {
   color: var(--light-blue);
   font-size: 20px;
@@ -92,9 +88,9 @@ a {
 }
 
 /* Home Section */
-#home{
-    margin-top: 0px;
-    padding-top: 135px;
+#home {
+  margin-top: 0px;
+  padding-top: 135px;
 }
 .para-hi {
   font-family: var(--typewriter-style);
@@ -190,10 +186,10 @@ a {
   #container {
     padding: 0px 100px;
   }
-  #home{
+  #home {
     margin-top: 0px;
     padding-top: 135px;
-}
+  }
   #navbar {
     padding: 0px 40px;
   }
@@ -208,6 +204,10 @@ a {
   }
   .nav-list span {
     font-size: 24px;
+  }
+  .nav-list a:hover {
+    box-shadow: var(--shadow);
+    background: var(--light-blue-hover);
   }
 
   /* Home Section */
