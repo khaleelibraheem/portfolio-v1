@@ -37,6 +37,20 @@ a {
   text-decoration: none;
   color: white;
 }
+section{
+  /* border: 1px solid var(--light-blue); */
+  margin-bottom: 100px;
+}
+/* Define a transition for the fade-in effect */
+.fade-in {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+/* Set the opacity to 1 for the fade-in effect */
+.fade-in.activate {
+  opacity: 1;
+}
 #nav-container {
   position: sticky;
   top: 0;
@@ -119,8 +133,7 @@ a {
 
 /* About Section */
 #about {
-  margin-bottom: 100px;
-  padding-top: 170px;
+  padding: 100px 0;
 }
 .section-container {
   display: flex;
@@ -170,6 +183,11 @@ a {
   filter: none;
 }
 
+/* Projects section */
+#projects {
+  padding: 100px 0;
+}
+
 @media screen and (max-width: 479px) {
   #container {
     padding: 0px 25px;
@@ -187,7 +205,7 @@ a {
   }
   #home {
     margin-top: 0px;
-    padding-top: 135px;
+    padding: 100px 0;
   }
   #navbar {
     padding: 0px 40px;
@@ -223,8 +241,7 @@ a {
   }
   /* About Section */
   #about {
-    margin-top: 90px;
-    padding-top: 60px;
+    padding: 100px 0;
   }
   .about-text {
     flex-direction: row;
@@ -241,6 +258,9 @@ a {
   }
   .about-text img {
     width: 100%;
+  }
+  #projects {
+    padding: 100px 0;
   }
 }
 @media screen and (min-width: 1070px) {
