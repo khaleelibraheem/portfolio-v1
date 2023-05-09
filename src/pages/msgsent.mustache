@@ -27,24 +27,34 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="styles.css" />
   </head>
+  <style>
+    #soon {
+      display: grid;
+      place-items: center;
+      margin-top: 100px;
+    }
+  </style>
   <body>
     <div id="nav-container">
       <!-- Navbar -->
       <div id="navbar">
         <div class="nav-logo">
-          <img src="images/logoipsum-296.svg" alt="logo" />
+          <a href="">
+            <img src="images/logo.png" alt="" style="width: 60px" />
+          </a>
+          <!-- <img src="images/logoipsum-296.svg" alt="logo" /> -->
         </div>
         <div class="nav-list">
           <ul id="ul">
-            <a href="index.html" class="nav-link" id="homeBtn">
+            <a href="#home" class="nav-link" id="homeBtn">
               <span class="material-symbols-outlined"> home </span>
               <li class="nav-list-item">Home</li>
             </a>
-            <a href="index.html" class="nav-link" id="aboutBtn">
+            <a href="#about" class="nav-link" id="aboutBtn">
               <span class="material-symbols-outlined"> person </span>
               <li class="nav-list-item">About</li>
             </a>
-            <a href="index.html" class="nav-link">
+            <a href="#projects" class="nav-link">
               <span class="material-symbols-outlined"> content_copy </span>
               <li class="nav-list-item">Projects</li>
             </a>
@@ -52,34 +62,11 @@
         </div>
       </div>
     </div>
-    <div class="container" id="form-container" data-aos="fade">
-      <div class="contact-form">
-        <h3>Send a Message</h3>
-        <form action="https://formbold.com/s/9kPlz" method="post">
-          <input type="text" name="fullname" placeholder="Your Fullname" required /><br /><br />
-          <input type="email" name="email" placeholder="Your Email" required /><br /><br />
-          <input type="text" name="subject" placeholder="Subject" required /><br /><br />
-          <textarea
-            name="message"
-            id=""
-            cols="50"
-            rows="7"
-            placeholder="Enter Message"
-          ></textarea
-          ><br /><br />
-          <div class="contact-btn">
-            <button type="submit">Send message</button>
-          </div>
-        </form>
-      </div>
+    <div class="soon" id="soon">
+      <h4>Thanks {{ name }} for contacting me</h4>
     </div>
-
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init({
-        offset: 200,
-        duration: 1000,
-      });
-    </script>
+    <div class="contact-btn" style="margin-top: 50px;">
+      <a href="/" id="talk-to-me-btn">Go back</a>
+    </div>
   </body>
 </html>
