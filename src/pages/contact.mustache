@@ -26,7 +26,12 @@
     />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="styles.css" />
-    <script src="https://hcaptcha.com/1/api.js" async defer></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script>
+      function onSubmit(token) {
+        document.getElementById("msgForm").submit();
+      }
+    </script>
   </head>
   <body>
     <div id="nav-container">
@@ -56,7 +61,7 @@
     <div class="container" id="form-container" data-aos="fade">
       <div class="contact-form">
         <h3>Send a Message</h3>
-        <form action="/contact" method="post">
+        <form action="/contact" method="post" id="msgForm">
           <input
             type="text"
             name="fullname"
@@ -83,11 +88,15 @@
             placeholder="Enter Message"
           ></textarea
           ><br /><br />
-          <div class="captcha">
-            <div class="h-captcha" data-sitekey="{{ sitekey }}"></div>
-          </div>
           <div class="contact-btn">
-            <button type="submit">Send message</button>
+            <button
+              class="g-recaptcha"
+              data-sitekey="6LdggvklAAAAADMJHUsPCAsuQcbirZoYRJo78FXc
+"
+              data-callback="onSubmit"
+            >
+              Send message
+            </button>
           </div>
         </form>
       </div>

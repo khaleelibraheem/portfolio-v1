@@ -25,34 +25,40 @@ app.get("/", (req, res) => {
   res.render("index");
 });
 app.get("/contact", (req, res) => {
-  res.render("contact", { sitekey: SITE_KEY });
+  res.render("contact");
 });
+
+app.post("/contact", (req, res) => { 
+  const { name } = req.body.fullname;
+
+  res.render("msgsent", {name})
+})
 
 // app.post("/contact", (req, res) => { 
 //     const name = req.body.fullname;
 //     res.render('msgsent', {name})
 // })
 
-app.post("/contact", function (req, res) {
-    const {token} = req.body;
-    const {name} = req.body.fullname;
+// app.post("/contact", function (req, res) {
+//     const {token} = req.body;
+//     const {name} = req.body.fullname;
 
-  hcaptcha.verify(SECRET_KEY, token, function (err, data) {
-    if (err) {
-      console.error(err);
-      // handle error
-      res.status(400).send("hCaptcha verification failed. Please try again.");
-    } else {
-      if (data.success) {
-        // verified successfully
-        res.render("msgsent", { name });
-      } else {
-        // verification failed
-        res.status(400).send("hCaptcha verification failed. Please try again.");
-      }
-    }
-  });
-});
+//   hcaptcha.verify(SECRET_KEY, token, function (err, data) {
+//     if (err) {
+//       console.error(err);
+//       // handle error
+//       res.status(400).send("hCaptcha verification failed. Please try again.");
+//     } else {
+//       if (data.success) {
+//         // verified successfully
+//         res.render("msgsent", { name });
+//       } else {
+//         // verification failed
+//         res.status(400).send("hCaptcha verification failed. Please try again.");
+//       }
+//     }
+//   });
+// });
 
 // const transporter = nodemailer.createTransport({
 //     host: 'mail.gmx.com',
