@@ -26,6 +26,7 @@
     />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="styles.css" />
+    <script src="https://hcaptcha.com/1/api.js" async defer></script>
   </head>
   <body>
     <div id="nav-container">
@@ -56,9 +57,24 @@
       <div class="contact-form">
         <h3>Send a Message</h3>
         <form action="/contact" method="post">
-          <input type="text" name="fullname" placeholder="Your Fullname" required /><br /><br />
-          <input type="email" name="email" placeholder="Your Email" required /><br /><br />
-          <input type="text" name="subject" placeholder="Subject" required /><br /><br />
+          <input
+            type="text"
+            name="fullname"
+            placeholder="Your Fullname"
+            required
+          /><br /><br />
+          <input
+            type="email"
+            name="email"
+            placeholder="Your Email"
+            required
+          /><br /><br />
+          <input
+            type="text"
+            name="subject"
+            placeholder="Subject"
+            required
+          /><br /><br />
           <textarea
             name="message"
             id=""
@@ -67,15 +83,15 @@
             placeholder="Enter Message"
           ></textarea
           ><br /><br />
-          <div class="h-captcha" data-sitekey="{{ sitekey }}"></div>
+          <div class="captcha">
+            <div class="h-captcha" data-sitekey="{{ sitekey }}"></div>
+          </div>
           <div class="contact-btn">
             <button type="submit">Send message</button>
           </div>
         </form>
       </div>
     </div>
-
-    <script src="https://hcaptcha.com/1/api.js" async defer></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init({
