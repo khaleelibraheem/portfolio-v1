@@ -13,7 +13,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use(express.static(path.join(__dirname, "public")));
 
-const SITE_KEY = "a2ea8bf3-0c10-403a-8fc8-d5ee034561e9";
+const SITE_KEY = "d0b9a39f-fb43-44a7-8ea1-a911f04f9699";
 const SECRET_KEY = "0x23b7D7b5C7740A5C573a49Ef6997fAF6D7D5f0d7";
 
 
