@@ -60,37 +60,39 @@
       <div class="contact-form">
         <h3>Send a Message</h3>
         <form action="/contact" method="post">
-          <input
-            type="text"
-            name="fullname"
-            placeholder="Fullname"
-            required
-          /><br /><br />
-          <input
-            type="email"
-            name="email"
-            placeholder="Email"
-            required
-          /><br /><br />
-          <input
-            type="text"
-            name="subject"
-            placeholder="Subject"
-            required
-          /><br /><br />
-          <textarea
-            name="message"
-            id=""
-            cols="50"
-            rows="7"
-            placeholder="Enter Message"
-          ></textarea
-          ><br /><br />
-          <!-- <div class="captcha">
+          <div class="form-cover">
+            <input
+              type="text"
+              name="fullname"
+              placeholder="Fullname"
+              required
+            /><br /><br />
+            <input
+              type="email"
+              name="email"
+              placeholder="Email"
+              required
+            /><br /><br />
+            <input
+              type="text"
+              name="subject"
+              placeholder="Subject"
+              required
+            /><br /><br />
+            <textarea
+              name="message"
+              id=""
+              cols="50"
+              rows="7"
+              placeholder="Enter Message"
+            ></textarea
+            ><br /><br />
+            <!-- <div class="captcha">
             <div class="h-captcha" data-sitekey="{{ sitekey }}"></div>
           </div> -->
-          <div class="contact-btn">
-            <button type="submit">Send message</button>
+            <div class="contact-btn">
+              <button type="submit">Send message</button>
+            </div>
           </div>
         </form>
       </div>
