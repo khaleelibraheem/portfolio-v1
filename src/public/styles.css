@@ -248,8 +248,8 @@ section {
   justify-content: center;
 }
 .soon h4 {
-  font-family: var(--typewriter-style);
-  color: var(--light-blue);
+  /* font-family: var(--typewriter-style); */
+  /* color: var(--light-blue); */
 }
 
 /* Talk to me */

@@ -40,10 +40,9 @@
       <!-- Navbar -->
       <div id="navbar">
         <div class="nav-logo">
-          <a href="">
+          <a href="/">
             <img src="images/logo.png" alt="" style="width: 60px" />
           </a>
-          <!-- <img src="images/logoipsum-296.svg" alt="logo" /> -->
         </div>
         <div class="nav-list">
           <ul id="ul">
@@ -63,11 +62,36 @@
         </div>
       </div>
     </div>
-    <div class="soon" id="soon">
-      <h4>Thanks {{ fullname }} for contacting me</h4>
+    <div id="container">
+      <div class="soon" id="soon">
+        <p style="text-align: center">
+          <!-- Thanks {{ fullname }} for contacting me -->
+          Thank you {{ fullname }} for getting in touch! Your message has been
+          received and I appreciate you taking the time to reach out.
+        </p>
+      </div>
+      <div class="contact-btn">
+        <a href="/contact" id="talk-to-me-btn">Go back</a>
+      </div>
     </div>
-    <div class="contact-btn" style="margin-top: 50px;">
-      <a href="/contact" id="talk-to-me-btn">Go back</a>
+
+    <div id="footer">
+      <div class="footer-icons">
+        <a href="https://instagram.com/khaleelalhaji" target="_blank">
+          <img src="images/i-instagram.svg" alt="ig" />
+        </a>
+        <a href="https://github.com" target="_blank">
+          <img src="images/i-github.svg" alt="gh" />
+        </a>
+        <a href="https://wa.link/rco31u" target="_blank">
+          <img src="images/icons8-whatsapp.svg" alt="wa" />
+        </a>
+        <a href="https://www.facebook.com/khaleel.alhaji/" target="_blank">
+          <img src="images/i-facebook.svg" alt="fb" />
+        </a>
+      </div>
+      <p>Built by <span>Khaleel Alhaji</span></p>
+      <p>&copy2023</p>
     </div>
   </body>
 </html>
