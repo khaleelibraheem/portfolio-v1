@@ -1,6 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
   const navLinks = document.querySelectorAll("#ul .nav-link");
   const sections = document.querySelectorAll("section");
+  const myProjectsBtn = document.querySelector("#my-projects-btn");
+  const projectsSection = document.querySelector("#projects");
 
   const observerOptions = {
     rootMargin: "-50px 0px 0px 0px",
@@ -34,4 +36,10 @@ document.addEventListener("DOMContentLoaded", function () {
       target.scrollIntoView({ behavior: "smooth", block: "start" });
     });
   });
+  myProjectsBtn.addEventListener("click", function (event) {
+    event.preventDefault();
+    projectsSection.scrollIntoView({
+      "behavior": "smooth",
+    })
+  })
 });
