@@ -326,7 +326,7 @@ section {
   padding: 0px 10px;
 }
 .contact-form {
-  padding: 20px;
+  padding: 20px 0px;
   border-radius: 8px;
   width: 100%;
 }
@@ -341,44 +341,17 @@ section {
   padding: 15px;
   border-radius: 4px;
 }
-.contact-form form input {
-  width: 100%;
-  padding: 15px 20px;
-  background: transparent;
-  border: none;
-  border-bottom: 1px solid #999;
-  border-radius: 0;
-  font-size: 18px;
-}
-.contact-form form textarea {
-  background: transparent;
-  border: 1px solid #999;
-  border-radius: 4px;
-  padding: 20px;
-  width: 100%;
-}
-.contact-form form input:focus{
-  outline: none;
-  border: none;
-  border-bottom: 1px solid var(--light-blue);
-}
-.contact-form form textarea:focus {
-  outline: none;
-  border: 1px solid var(--light-blue);
-}
 .contact-btn {
   display: grid;
   place-content: center;
 }
 .contact-btn button {
-  background-color: var(--light-blue);
   color: white;
-  cursor: pointer;
   font-family: var(--roboto-style);
 }
-.captcha {
+/* .captcha {
   margin-bottom: 15px;
-}
+} */
 
 /* Media Queries */
 @media screen and (max-width: 479px) {
